@@ -154,14 +154,14 @@ COMPASS.team = [
     order: 1
   },
   {
-    id: "wouter-duyck",
-    name: "Prof. Wouter Duyck",
-    initials: "WD",
-    role_en: "Co-Supervisor",
-    role_nl: "Copromotor",
+    id: "Stijn-Schelfhout",
+    name: "Prof. Stijn Schelfhout",
+    initials: "SC",
+    role_en: "Supervisor",
+    role_nl: "Promotor",
     institution: "Ghent University",
     department: "Dept. of Experimental Psychology",
-    research_lines: ["RL1", "RL2"],
+    research_lines: ["RL1 Lead", "RL2"],
     orcid: "",
     order: 2
   },
@@ -169,8 +169,8 @@ COMPASS.team = [
     id: "karine-verschueren",
     name: "Prof. Karine Verschueren",
     initials: "KV",
-    role_en: "Co-Supervisor",
-    role_nl: "Copromotor",
+    role_en: "Supervisor",
+    role_nl: "promotor",
     institution: "KU Leuven",
     department: "School Psychology & Dev. in Context",
     research_lines: ["RL1", "RL3 Lead"],
@@ -185,7 +185,7 @@ COMPASS.team = [
     role_nl: "Valorisatieleider",
     institution: "Artevelde University of Applied Sciences",
     department: "Education & Career Guidance",
-    research_lines: ["RL3", "Valorization"],
+    research_lines: ["Valorization"],
     orcid: "",
     order: 4
   }
