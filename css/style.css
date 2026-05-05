@@ -79,15 +79,15 @@ img{max-width:100%;display:block}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  height:100px;
+  height:80px;
   gap:2rem;
   max-width:1200px;
   margin:0 auto;
-  padding:0 48px;
+  padding:0 56px;
 }
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .site-logo{
-  height:58px;
+  height:75px;
   display:block;
 }
 .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:var(--gold-light);flex-shrink:0}
