@@ -79,11 +79,11 @@ img{max-width:100%;display:block}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  height:68px;
+  height:100px;
   gap:2rem;
   max-width:1200px;
   margin:0 auto;
-  padding:0 32px;
+  padding:0 48px;
 }
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .site-logo{
