@@ -75,8 +75,21 @@ img{max-width:100%;display:block}
    NAVBAR
 ════════════════════════════════════════ */
 .navbar{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);box-shadow:var(--sh-sm)}
-.navbar-inner{display:flex;align-items:center;justify-content:space-between;height:68px;gap:2rem}
+.navbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height:68px;
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 32px;
+}
 .logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.site-logo{
+  height:58px;
+  display:block;
+}
 .logo-mark{width:40px;height:40px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:17px;font-weight:900;color:var(--gold-light);flex-shrink:0}
 .logo-name{font-family:'JetBrains Mono',monospace;font-size:15px;font-weight:500;color:var(--navy);letter-spacing:.02em}
 .logo-sub{font-size:11px;color:var(--text-muted);letter-spacing:.04em}
@@ -366,3 +379,17 @@ textarea.form-input{resize:vertical;min-height:110px}
 ════════════════════════════════════════ */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s ease;transition-delay:var(--delay,0s)}
 .reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ════════════════════════════════════════
+ LOGO FIX  
+════════════════════════════════════════ */
+
+.site-logo {
+  height: 60px;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
