@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="COMPASS+ — FWO SBO research project empowering study choice for higher education through Columbus self-assessment feedback.">
+<meta property="og:title" content="COMPASS+ | FWO SBO Research Project">
+<meta property="og:description" content="Empowering the Study Choice Process for Higher Education through Online Self-Assessment Feedback and Effective Career Guidance.">
+<meta property="og:type" content="website">
+<title>COMPASS+ | FWO SBO Research Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Figtree:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+  TOPBAR
+══════════════════════════════════════ -->
+<div class="topbar" id="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span class="topbar-dot"></span>
+      <span class="en" id="topbar-text-en">FWO SBO Project · S002426N · 2025–2028</span>
+      <span class="nl" id="topbar-text-nl">FWO SBO Project · S002426N · 2025–2028</span>
+      <span class="topbar-sep">·</span>
+      <a href="https://columbus.onderwijskiezer.be" target="_blank" rel="noopener">columbus.onderwijskiezer.be ↗</a>
+    </div>
+    <div class="topbar-right">
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" id="btn-nl" onclick="setLang('nl')">NL</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  NAVBAR
+══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#" class="logo" onclick="showPage('home');return false;">
+      <div class="logo-mark">C+</div>
+      <div>
+        <div class="logo-name">COMPASS+</div>
+        <div class="logo-sub en">Powered by Columbus</div>
+        <div class="logo-sub nl">Ondersteund door Columbus</div>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" id="nav-home" class="nav-link active" onclick="showPage('home');return false;">
+        <span class="en">Home</span><span class="nl">Home</span></a></li>
+      <li><a href="#" id="nav-about" class="nav-link" onclick="showPage('about');return false;">
+        <span class="en">About</span><span class="nl">Over ons</span></a></li>
+      <li><a href="#" id="nav-research" class="nav-link" onclick="showPage('research');return false;">
+        <span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+      <li><a href="#" id="nav-news" class="nav-link" onclick="showPage('news');return false;">
+        <span class="en">News</span><span class="nl">Nieuws</span></a></li>
+      <li><a href="#" id="nav-calendar" class="nav-link" onclick="showPage('calendar');return false;">
+        <span class="en">Calendar</span><span class="nl">Kalender</span></a></li>
+      <li><a href="#" id="nav-contact" class="nav-link nav-cta" onclick="showPage('contact');return false;">
+        Contact</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <div class="mobile-drawer-inner">
+    <button class="drawer-close" id="drawer-close">✕</button>
+    <a href="#" onclick="showPage('home');closeMobile();return false;"><span class="en">Home</span><span class="nl">Home</span></a>
+    <a href="#" onclick="showPage('about');closeMobile();return false;"><span class="en">About</span><span class="nl">Over ons</span></a>
+    <a href="#" onclick="showPage('research');closeMobile();return false;"><span class="en">Research</span><span class="nl">Onderzoek</span></a>
+    <a href="#" onclick="showPage('news');closeMobile();return false;"><span class="en">News</span><span class="nl">Nieuws</span></a>
+    <a href="#" onclick="showPage('calendar');closeMobile();return false;"><span class="en">Calendar</span><span class="nl">Kalender</span></a>
+    <a href="#" onclick="showPage('contact');closeMobile();return false;">Contact</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" id="mbtn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="mbtn-nl" onclick="setLang('nl')">NL</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+  PAGES
+══════════════════════════════════════ -->
+
+<!-- ── HOME ── -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-orb hero-orb1"></div>
+    <div class="hero-orb hero-orb2"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          <span class="en">FWO SBO · 4-Year Research Project · 2025–2028</span>
+          <span class="nl">FWO SBO · 4-jarig Onderzoeksproject · 2025–2028</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="en">Empowering the<br><em>Study Choice</em><br>Process</span>
+          <span class="nl">Studiekeuze&shy;processen<br>voor <em>Hoger Onderwijs</em><br>Versterken</span>
+        </h1>
+        <p class="hero-desc">
+          <span class="en">Through online self-assessment feedback and effective career guidance — the COMPASS+ project makes Columbus more effective for every student transitioning to higher education.</span>
+          <span class="nl">Via online zelfevaluatie-feedback en effectieve loopbaanbegeleiding — COMPASS+ maakt Columbus effectiever voor elke leerling in de transitie naar hoger onderwijs.</span>
+        </p>
+        <div class="hero-btns">
+          <a href="#" onclick="showPage('about');return false;" class="btn-primary">
+            <span class="en">About the Project</span><span class="nl">Over het project</span> →
+          </a>
+          <a href="https://columbus.onderwijskiezer.be" target="_blank" class="btn-ghost">
+            Columbus ↗
+          </a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-label en">Project at a Glance</div>
+        <div class="panel-label nl">Project in Cijfers</div>
+        <div class="panel-row">
+          <span class="panel-key en">Total Budget</span><span class="panel-key nl">Budget</span>
+          <span class="panel-val">€2,289,184</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key en">Duration</span><span class="panel-key nl">Looptijd</span>
+          <span class="panel-val">48 <small class="en">months</small><small class="nl">maanden</small></span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key en">Columbus users / yr</span><span class="panel-key nl">Columbus gebruikers / jr</span>
+          <span class="panel-val">15,000+</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key en">Partner institutions</span><span class="panel-key nl">Partnerinstellingen</span>
+          <span class="panel-val">4</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key en">Advisory members</span><span class="panel-key nl">Adviescommissie</span>
+          <span class="panel-val">16</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-key">FWO Application</span>
+          <span class="panel-val panel-mono">S002426N</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+
+  <!-- Intro strip -->
+  <div class="intro-strip">
+    <div class="container intro-strip-inner">
+      <div class="intro-icon">🧭</div>
+      <p class="en"><strong>COMPASS+</strong> builds on the Columbus self-assessment tool used by <strong>30% of all Flemish last-year secondary school students</strong>. For the first time, we systematically study <em>why and how</em> students engage with feedback — and translate those insights directly into improved tools and training for schools.</p>
+      <p class="nl"><strong>COMPASS+</strong> bouwt verder op de Columbus zelfevaluatietool die door <strong>30% van alle Vlaamse leerlingen in het laatste jaar SO</strong> wordt gebruikt. Voor het eerst onderzoeken we systematisch <em>waarom en hoe</em> leerlingen omgaan met feedback — en vertalen we die inzichten naar verbeterde tools en vorming voor scholen.</p>
+    </div>
+  </div>
+
+  <!-- Research lines teaser -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag en">Research Programme</div>
+        <div class="section-tag nl">Onderzoeksprogramma</div>
+        <h2 class="section-title en">Three <em>Research Lines</em></h2>
+        <h2 class="section-title nl">Drie <em>Onderzoekslijnen</em></h2>
+        <p class="section-lead en">Each research line addresses a distinct set of questions using complementary methods — covering the full picture of feedback engagement and career guidance.</p>
+        <p class="section-lead nl">Elke onderzoekslijn beantwoordt specifieke vragen via complementaire methoden — samen bieden ze een volledig beeld van feedbackgebruik en studiekeuzebegeleiding.</p>
+      </div>
+      <div class="rl-grid">
+        <div class="rl-card reveal" style="--delay:.05s">
+          <div class="rl-bar" style="--c1:#0E1B35;--c2:#3D5080"></div>
+          <div class="rl-num">01</div>
+          <div class="rl-tag en">Longitudinal Survey</div>
+          <div class="rl-tag nl">Longitudinaal Survey</div>
+          <h3 class="rl-title en">Individual Antecedents & Outcomes</h3>
+          <h3 class="rl-title nl">Individuele Antecedenten & Uitkomsten</h3>
+          <p class="rl-desc en">Who engages with Columbus feedback, and what are the long-term effects on study paths in higher education? We analyse 30,000+ students across cohorts 2022–2025.</p>
+          <p class="rl-desc nl">Wie gebruikt de Columbus-feedback en wat zijn de langetermijneffecten op studietrajecten in HO? We analyseren 30.000+ leerlingen uit cohorten 2022–2025.</p>
+          <div class="rl-chips">
+            <span class="chip">UGent</span><span class="chip">KU Leuven</span><span class="chip">UA</span><span class="chip">4 Studies</span>
+          </div>
+        </div>
+        <div class="rl-card reveal" style="--delay:.12s">
+          <div class="rl-bar" style="--c1:#C4973A;--c2:#DDB96A"></div>
+          <div class="rl-num">02</div>
+          <div class="rl-tag en">Lab Studies + Real World</div>
+          <div class="rl-tag nl">Labstudies + Praktijk</div>
+          <h3 class="rl-title en">Mechanisms of Feedback Engagement</h3>
+          <h3 class="rl-title nl">Mechanismen van Feedbackgebruik</h3>
+          <p class="rl-desc en">How do students process self-assessment feedback, and how can instructional nudges improve engagement? Eye-tracking lab studies + real-world deployment in Columbus.</p>
+          <p class="rl-desc nl">Hoe verwerken leerlingen zelfevaluatiefeedback en hoe kunnen nudges het gebruik verbeteren? Eye-tracking labstudies + implementatie in Columbus.</p>
+          <div class="rl-chips">
+            <span class="chip">UA</span><span class="chip">UGent</span><span class="chip">Eye-tracking</span><span class="chip">3 Studies</span>
+          </div>
+        </div>
+        <div class="rl-card reveal" style="--delay:.2s">
+          <div class="rl-bar" style="--c1:#3D5080;--c2:#0E1B35"></div>
+          <div class="rl-num">03</div>
+          <div class="rl-tag en">School Intervention Research</div>
+          <div class="rl-tag nl">Schoolinterventieonderzoek</div>
+          <h3 class="rl-title en">Career Guidance in Schools</h3>
+          <h3 class="rl-title nl">Studiekeuzebegeleiding op School</h3>
+          <p class="rl-desc en">What makes school-based career guidance effective? We test a values-clarification intervention in 24 schools and examine the role of parental and peer support.</p>
+          <p class="rl-desc nl">Wat maakt schoolgebaseerde studiekeuzebegeleiding effectief? We testen een interventie in 24 scholen en onderzoeken ouder- en peerondersteuning.</p>
+          <div class="rl-chips">
+            <span class="chip">KU Leuven</span><span class="chip">AHS</span><span class="chip">UA</span><span class="chip">3 Studies</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="text-align:center;margin-top:2.5rem">
+        <a href="#" onclick="showPage('research');return false;" class="btn-primary">
+          <span class="en">Full research programme →</span>
+          <span class="nl">Volledig onderzoeksprogramma →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest news teaser -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div class="section-tag en">Latest Updates</div>
+          <div class="section-tag nl">Laatste Nieuws</div>
+          <h2 class="section-title en">News & <em>Publications</em></h2>
+          <h2 class="section-title nl">Nieuws & <em>Publicaties</em></h2>
+        </div>
+        <a href="#" onclick="showPage('news');return false;" class="btn-outline">
+          <span class="en">All news →</span><span class="nl">Alle nieuws →</span>
+        </a>
+      </div>
+      <div class="news-teaser-grid reveal" id="home-news"></div>
+    </div>
+  </section>
+
+  <!-- Upcoming events teaser -->
+  <section class="section bg-navy">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag light">Calendar</div>
+        <h2 class="section-title light en">Upcoming <em>Events</em></h2>
+        <h2 class="section-title light nl">Komende <em>Activiteiten</em></h2>
+      </div>
+      <div class="events-teaser reveal" id="home-events"></div>
+      <div style="margin-top:2rem;text-align:center">
+        <a href="#" onclick="showPage('calendar');return false;" class="btn-gold">
+          <span class="en">Full calendar →</span><span class="nl">Volledige kalender →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners strip -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center">
+        <div class="section-tag" style="justify-content:center">Partners</div>
+        <h2 class="section-title en">Supported by <em>16 organisations</em></h2>
+        <h2 class="section-title nl">Ondersteund door <em>16 organisaties</em></h2>
+      </div>
+      <div class="partner-logos reveal">
+        <div class="partner-logo-item highlight">UA</div>
+        <div class="partner-logo-item highlight">UGent</div>
+        <div class="partner-logo-item highlight">KU Leuven</div>
+        <div class="partner-logo-item highlight">Artevelde HS</div>
+        <div class="partner-logo-item">Dept. Onderwijs</div>
+        <div class="partner-logo-item">VLIR</div>
+        <div class="partner-logo-item">GO!</div>
+        <div class="partner-logo-item">OVSG</div>
+        <div class="partner-logo-item">CNO</div>
+        <div class="partner-logo-item">Scholierenkoepel</div>
+        <div class="partner-logo-item">VVS</div>
+        <div class="partner-logo-item">Eduflow</div>
+        <div class="partner-logo-item">Schoolmakers</div>
+        <div class="partner-logo-item">StudyChat</div>
+        <div class="partner-logo-item">AGSO</div>
+        <div class="partner-logo-item">OKO</div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ── ABOUT ── -->
+<div class="page" id="page-about">
+  <section class="page-hero bg-navy">
+    <div class="hero-orb hero-orb1" style="opacity:.4"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge"><span class="badge-dot"></span>
+          <span class="en">About the Project</span><span class="nl">Over het Project</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span class="en">Who we are &amp;<br><em>what we do</em></span>
+          <span class="nl">Wie we zijn &amp;<br><em>wat we doen</em></span>
+        </h1>
+        <p class="page-hero-lead en">An interdisciplinary consortium of four Flemish institutions united by one mission: helping every student make a well-informed study choice for higher education.</p>
+        <p class="page-hero-lead nl">Een interdisciplinair consortium van vier Vlaamse instellingen, verenigd door één missie: elke leerling helpen een weloverwogen studiekeuze te maken voor het hoger onderwijs.</p>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container two-col">
+      <div class="reveal">
+        <div class="section-tag en">Mission</div>
+        <div class="section-tag nl">Missie</div>
+        <h2 class="section-title en">Why <em>COMPASS+</em>?</h2>
+        <h2 class="section-title nl">Waarom <em>COMPASS+</em>?</h2>
+        <div class="prose en">
+          <p>Low academic success rates in higher education are a global concern. In Flanders, only <strong>29.5% of bachelor's students graduate within the theoretical duration</strong>. A key factor is the poor quality of the study choice process — particularly for students without optimal school guidance.</p>
+          <p>The <strong>Columbus project</strong>, initiated in 2016 by the Flemish Ministry of Education, provides an online self-assessment tool with 15,000+ users per year. Despite its widespread adoption, the effectiveness of its feedback has never been empirically studied.</p>
+          <p>COMPASS+ fills this gap with a 4-year mixed-methods research programme — and immediately translates findings into tools, training, and interventions through four valorization streams.</p>
+        </div>
+        <div class="prose nl">
+          <p>Lage academische succespercentages in het hoger onderwijs zijn een wereldwijde zorg. In Vlaanderen haalt slechts <strong>29,5% van de bachelorstudenten een diploma binnen de theoretische studieduur</strong>. Een sleutelfactor is de slechte kwaliteit van het studiekeuzeproces.</p>
+          <p>Het <strong>Columbus-project</strong>, gestart in 2016 door het Vlaams Ministerie van Onderwijs, biedt een online zelfevaluatie-instrument met 15.000+ gebruikers per jaar. Ondanks de brede adoptie is de effectiviteit van de feedback nooit empirisch onderzocht.</p>
+          <p>COMPASS+ vult deze lacune met een 4-jarig mixed-methods onderzoeksprogramma — en vertaalt bevindingen meteen naar tools, vorming en interventies via vier valorisatielijnen.</p>
+        </div>
+      </div>
+      <div class="value-cards reveal" style="--delay:.15s">
+        <div class="value-card">
+          <div class="value-icon">🔬</div>
+          <div>
+            <h4 class="en">Evidence-Based</h4><h4 class="nl">Evidence-Based</h4>
+            <p class="en">Every valorization product is grounded in empirical findings from the three research lines.</p>
+            <p class="nl">Elk valorisatieproduct is gebaseerd op empirische bevindingen uit de drie onderzoekslijnen.</p>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <div>
+            <h4 class="en">Co-created</h4><h4 class="nl">Co-gecreëerd</h4>
+            <p class="en">16 advisory committee members from policy, schools, student organisations and professional partners.</p>
+            <p class="nl">16 leden van de adviescommissie uit beleid, scholen, leerlingenorganisaties en professionele partners.</p>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔓</div>
+          <div>
+            <h4 class="en">Open Access</h4><h4 class="nl">Open Access</h4>
+            <p class="en">All products are integrated into the Columbus platform — freely accessible to all Flemish students, teachers and counselors.</p>
+            <p class="nl">Alle producten worden geïntegreerd in het Columbus-platform — vrij toegankelijk voor alle Vlaamse leerlingen, leerkrachten en begeleiders.</p>
+          </div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <div>
+            <h4 class="en">Direct Impact</h4><h4 class="nl">Directe Impact</h4>
+            <p class="en">Research feeds immediately into improved tools and school interventions — during the project, not after.</p>
+            <p class="nl">Onderzoek leidt meteen tot verbeterde tools en schoolinterventies — tijdens het project, niet erna.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag en">Research Team</div>
+        <div class="section-tag nl">Onderzoeksteam</div>
+        <h2 class="section-title en">The <em>Consortium</em></h2>
+        <h2 class="section-title nl">Het <em>Consortium</em></h2>
+        <p class="section-lead en">Four institutions, complementary expertise — educational sciences, cognitive psychology, school psychology, and applied career guidance.</p>
+        <p class="section-lead nl">Vier instellingen, complementaire expertise — onderwijswetenschappen, cognitieve psychologie, schoolpsychologie en toegepaste loopbaanbegeleiding.</p>
+      </div>
+      <div class="team-grid reveal" id="team-grid"></div>
+
+      <div class="reveal" style="margin-top:3.5rem">
+        <div class="section-tag en">Budget Distribution</div>
+        <div class="section-tag nl">Budgetverdeling</div>
+        <h3 class="section-title" style="font-size:1.5rem;margin:.5rem 0 1.5rem">
+          <span class="en">€2,289,184 across four institutions</span>
+          <span class="nl">€2.289.184 verdeeld over vier instellingen</span>
+        </h3>
+        <div class="budget-table">
+          <div class="budget-row budget-header">
+            <span class="en">Institution</span><span class="nl">Instelling</span>
+            <span class="en">Role</span><span class="nl">Rol</span>
+            <span class="en">Total Budget</span><span class="nl">Totaal Budget</span>
+            <span class="en">Share</span><span class="nl">Aandeel</span>
+          </div>
+          <div class="budget-row">
+            <strong>University of Antwerp</strong>
+            <span class="en">Lead · RL2</span><span class="nl">Promotor · OL2</span>
+            <span>€837,882</span>
+            <div><div class="bbar-wrap"><div class="bbar" style="width:36.6%"></div></div><small>36.6%</small></div>
+          </div>
+          <div class="budget-row">
+            <strong>KU Leuven</strong>
+            <span class="en">RL3 Lead</span><span class="nl">OL3 Lead</span>
+            <span>€648,796</span>
+            <div><div class="bbar-wrap"><div class="bbar" style="width:28.3%"></div></div><small>28.3%</small></div>
+          </div>
+          <div class="budget-row">
+            <strong>Artevelde UAS</strong>
+            <span class="en">Valorization</span><span class="nl">Valorisatie</span>
+            <span>€437,002</span>
+            <div><div class="bbar-wrap"><div class="bbar" style="width:19.1%"></div></div><small>19.1%</small></div>
+          </div>
+          <div class="budget-row">
+            <strong>Ghent University</strong>
+            <span class="en">RL1 Lead</span><span class="nl">OL1 Lead</span>
+            <span>€365,504</span>
+            <div><div class="bbar-wrap"><div class="bbar" style="width:16%"></div></div><small>16.0%</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /about -->
+
+<!-- ── RESEARCH ── -->
+<div class="page" id="page-research">
+  <section class="page-hero bg-navy">
+    <div class="hero-orb hero-orb1" style="opacity:.4"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge"><span class="badge-dot"></span>
+          <span class="en">Research Programme</span><span class="nl">Onderzoeksprogramma</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span class="en">Three <em>Research Lines</em></span>
+          <span class="nl">Drie <em>Onderzoekslijnen</em></span>
+        </h1>
+        <p class="page-hero-lead en">A 4-year mixed-methods programme combining longitudinal data analysis, eye-tracking lab studies, and school-based intervention research.</p>
+        <p class="page-hero-lead nl">Een 4-jarig mixed-methods programma dat longitudinale data-analyse, eye-tracking labstudies en schoolgebaseerd interventieonderzoek combineert.</p>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="rl-tabs reveal">
+        <button class="rl-tab active" onclick="switchRL(1)">
+          <span class="en">Research Line 1</span><span class="nl">Onderzoekslijn 1</span>
+        </button>
+        <button class="rl-tab" onclick="switchRL(2)">
+          <span class="en">Research Line 2</span><span class="nl">Onderzoekslijn 2</span>
+        </button>
+        <button class="rl-tab" onclick="switchRL(3)">
+          <span class="en">Research Line 3</span><span class="nl">Onderzoekslijn 3</span>
+        </button>
+      </div>
+
+      <div class="rl-panel active" id="rl-panel-1">
+        <div class="two-col">
+          <div>
+            <div class="rl-tag en">Longitudinal Survey Research</div>
+            <div class="rl-tag nl">Longitudinaal Surveyonderzoek</div>
+            <h2 class="section-title en">Individual Antecedents &amp; <em>Outcomes</em></h2>
+            <h2 class="section-title nl">Individuele Antecedenten &amp; <em>Uitkomsten</em></h2>
+            <p class="prose en">Using Columbus web tracking data from 30,000+ students (Cohorts 2022–2025), this research line explores which students engage with feedback, identifies distinct engagement profiles, and traces long-term effects on study paths in higher education.</p>
+            <p class="prose nl">Via Columbus webtracking-data van 30.000+ leerlingen (cohorten 2022–2025) onderzoekt deze lijn welke leerlingen feedback gebruiken, identificeert engagementprofielen en volgt langetermijneffecten op studietrajecten in HO.</p>
+            <ul class="obj-list">
+              <li><span class="obj-num">RO 1.1</span><span class="en">Explore individual antecedents of behavioral feedback (dis)engagement using Columbus web tracking data</span><span class="nl">Verken individuele antecedenten van gedragsmatig feedbackgebruik via Columbus webtracking-data</span></li>
+              <li><span class="obj-num">RO 1.2</span><span class="en">Person-centered approach via Latent Profile Analysis (LPA) of feedback engagement</span><span class="nl">Persoonsgerichte aanpak via Latent Profielanalyse (LPA) van feedbackgebruik</span></li>
+              <li><span class="obj-num">RO 1.3</span><span class="en">Contribution of behavioral feedback engagement to study paths in HE</span><span class="nl">Bijdrage van feedbackgebruik aan studietrajecten in HO</span></li>
+            </ul>
+          </div>
+          <div class="studies-box">
+            <div class="studies-label en">Studies</div>
+            <div class="studies-label nl">Studies</div>
+            <div class="study-row"><span class="study-badge">1.1</span><div><strong class="en">Antecedents analysis</strong><strong class="nl">Antecedenten-analyse</strong><p class="en">Exploratory regression · N>30,000 · Cohorts 2022–2025 · Web tracking data</p><p class="nl">Exploratieve regressie · N>30.000 · Cohorten 2022–2025 · Webtracking-data</p></div></div>
+            <div class="study-row"><span class="study-badge">1.2</span><div><strong class="en">Latent Profile Analysis</strong><strong class="nl">Latente Profielanalyse</strong><p class="en">Person-centered profiles via Latent GOLD · split-half validation</p><p class="nl">Persoonsgerichte profielen via Latent GOLD · split-half validatie</p></div></div>
+            <div class="study-row"><span class="study-badge">1.3</span><div><strong class="en">Study choice actualization</strong><strong class="nl">Studiekeuze-actualisatie</strong><p class="en">SEM: does feedback engagement mediate RIASEC-to-program fit?</p><p class="nl">SEM: medieert feedbackgebruik de RIASEC-studierichtingsfit?</p></div></div>
+            <div class="study-row"><span class="study-badge">1.4</span><div><strong class="en">Long-term study paths</strong><strong class="nl">Langetermijn studietrajecten</strong><p class="en">SEM: ECTS success · time to graduation · reorientation · dropout (2022–2028)</p><p class="nl">SEM: ECTS-succes · studieduur · heroriëntatie · uitval (2022–2028)</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rl-panel" id="rl-panel-2">
+        <div class="two-col">
+          <div>
+            <div class="rl-tag en">Lab Studies + Real-World Deployment</div>
+            <div class="rl-tag nl">Labstudies + Implementatie in de Praktijk</div>
+            <h2 class="section-title en">Mechanisms of <em>Feedback Engagement</em></h2>
+            <h2 class="section-title nl">Mechanismen van <em>Feedbackgebruik</em></h2>
+            <p class="prose en">Through eye-tracking lab studies and real-world deployment in Columbus, this line examines how motivational and social comparison instructional nudges affect cognitive, emotional, and behavioral engagement — and how self-efficacy and self-regulation moderate these effects.</p>
+            <p class="prose nl">Via eye-tracking labstudies en implementatie in Columbus onderzoekt deze lijn hoe motivationele en sociale vergelijkingsnudges cognitief, emotioneel en gedragsmatig engagement beïnvloeden — en hoe zelfeffectiviteit en zelfregulatie dit modereren.</p>
+            <ul class="obj-list">
+              <li><span class="obj-num">RO 2.1</span><span class="en">Effectiveness of motivational vs. social comparison nudge interventions on all three forms of feedback engagement</span><span class="nl">Effectiviteit van motivationele vs. sociale vergelijkingsnudges op alle drie vormen van feedbackengagement</span></li>
+              <li><span class="obj-num">RO 2.2</span><span class="en">Moderating role of academic self-efficacy on nudge effects</span><span class="nl">Modererende rol van academische zelfeffectiviteit op nudge-effecten</span></li>
+              <li><span class="obj-num">RO 2.3</span><span class="en">Moderating role of self-regulation on nudge intervention effectiveness</span><span class="nl">Modererende rol van zelfregulatie op de effectiviteit van nudge-interventies</span></li>
+            </ul>
+          </div>
+          <div class="studies-box">
+            <div class="studies-label en">Studies</div>
+            <div class="studies-label nl">Studies</div>
+            <div class="study-row"><span class="study-badge">2.1</span><div><strong class="en">Lab Study — Self-efficacy</strong><strong class="nl">Labstudie — Zelfeffectiviteit</strong><p class="en">~60 SE students · Eye-tracking + cued recall interviews · Antwerp Social Lab · 3 conditions</p><p class="nl">~60 SO-leerlingen · Eye-tracking + gestimuleerde retrospectieve interviews · Antwerp Social Lab · 3 condities</p></div></div>
+            <div class="study-row"><span class="study-badge">2.2</span><div><strong class="en">Lab Study — Self-regulation</strong><strong class="nl">Labstudie — Zelfregulatie</strong><p class="en">~60 SE students · Same design · Self-regulation moderator · Updated nudge videos (v2)</p><p class="nl">~60 SO-leerlingen · Zelfde opzet · Zelfregulatie moderator · Bijgewerkte nudgevideo's (v2)</p></div></div>
+            <div class="study-row"><span class="study-badge">2.3</span><div><strong class="en">Real-world study</strong><strong class="nl">Praktijkstudie</strong><p class="en">All Columbus users (N>500 min.) · Random assignment to conditions · Web tracking data</p><p class="nl">Alle Columbus-gebruikers (N>500 min.) · Willekeurige toewijzing aan condities · Webtracking-data</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rl-panel" id="rl-panel-3">
+        <div class="two-col">
+          <div>
+            <div class="rl-tag en">School-Based Intervention Research</div>
+            <div class="rl-tag nl">Schoolgebaseerd Interventieonderzoek</div>
+            <h2 class="section-title en">Career Guidance <em>in Schools</em></h2>
+            <h2 class="section-title nl">Studiekeuzebegeleiding <em>op School</em></h2>
+            <p class="prose en">This research line investigates what makes school-based career guidance effective, tests a values-clarification micro-trial intervention, and examines the role of parental and peer support in students' career exploration and study choice outcomes.</p>
+            <p class="prose nl">Deze onderzoekslijn onderzoekt wat schoolgebaseerde studiekeuzebegeleiding effectief maakt, test een micro-trial waardeverduidelijkingsinterventie en bestudeert de rol van ouder- en peerondersteuning.</p>
+            <ul class="obj-list">
+              <li><span class="obj-num">RO 3.1</span><span class="en">Critical modalities for integrating Columbus within school-based career guidance</span><span class="nl">Kritische modaliteiten voor de integratie van Columbus in schoolgebaseerde studiekeuzebegeleiding</span></li>
+              <li><span class="obj-num">RO 3.2</span><span class="en">Test if values &amp; goals clarification intervention enhances Columbus effectiveness</span><span class="nl">Test of een waardeverduidelijkingsinterventie de effectiviteit van Columbus vergroot</span></li>
+              <li><span class="obj-num">RO 3.3</span><span class="en">Joint role of perceived parental and peer social support on career exploration outcomes</span><span class="nl">Gezamenlijke rol van ervaren ouder- en peerondersteuning op uitkomsten van loopbaanexploratie</span></li>
+              <li><span class="obj-num">RO 3.4</span><span class="en">Interplay between school-based intervention and social support</span><span class="nl">Wisselwerking tussen schoolgebaseerde interventie en sociale ondersteuning</span></li>
+            </ul>
+          </div>
+          <div class="studies-box">
+            <div class="studies-label en">Studies</div>
+            <div class="studies-label nl">Studies</div>
+            <div class="study-row"><span class="study-badge">3.1</span><div><strong class="en">Online school survey</strong><strong class="nl">Online schoolsurvey</strong><p class="en">All Columbus-using schools · Multi-level analyses · Career guidance modalities vs. outcomes</p><p class="nl">Alle scholen die Columbus gebruiken · Multiniveau-analyses · Begeleidingsmodaliteiten vs. uitkomsten</p></div></div>
+            <div class="study-row"><span class="study-badge">3.2</span><div><strong class="en">Micro-trial intervention</strong><strong class="nl">Micro-trial interventie</strong><p class="en">24 schools · 6 per guidance profile · N≈1,043 students · Values clarification vs. control</p><p class="nl">24 scholen · 6 per begeleidingsprofiel · N≈1.043 leerlingen · Waardeverduidelijking vs. controle</p></div></div>
+            <div class="study-row"><span class="study-badge">3.3</span><div><strong class="en">Longitudinal student survey</strong><strong class="nl">Longitudinale leerlingensurvey</strong><p class="en">Parent &amp; peer support dimensions (involvement, autonomy support, interference) · LPA + multilevel</p><p class="nl">Ouder- en peerondersteuning (betrokkenheid, autonomieondersteuning, interferentie) · LPA + multiniveau</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /research -->
+
+<!-- ── NEWS ── -->
+<div class="page" id="page-news">
+  <section class="page-hero bg-navy" style="padding-bottom:4rem">
+    <div class="hero-orb hero-orb1" style="opacity:.4"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge"><span class="badge-dot"></span>
+          <span class="en">Latest Updates</span><span class="nl">Laatste Nieuws</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span class="en">News &amp; <em>Publications</em></span>
+          <span class="nl">Nieuws &amp; <em>Publicaties</em></span>
+        </h1>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="news-filter reveal">
+        <button class="filter-btn active" onclick="filterNews('all')">
+          <span class="en">All</span><span class="nl">Alles</span>
+        </button>
+        <button class="filter-btn" onclick="filterNews('Publication')">
+          <span class="en">Publications</span><span class="nl">Publicaties</span>
+        </button>
+        <button class="filter-btn" onclick="filterNews('Conference')">
+          <span class="en">Conferences</span><span class="nl">Conferenties</span>
+        </button>
+        <button class="filter-btn" onclick="filterNews('Advisory Committee')">
+          <span class="en">Advisory Committee</span><span class="nl">Klankbordgroep</span>
+        </button>
+        <button class="filter-btn" onclick="filterNews('Project Launch')">
+          <span class="en">Project Updates</span><span class="nl">Projectupdates</span>
+        </button>
+      </div>
+      <div class="news-full-grid reveal" id="news-full-grid"></div>
+    </div>
+  </section>
+</div><!-- /news -->
+
+<!-- ── CALENDAR ── -->
+<div class="page" id="page-calendar">
+  <section class="page-hero bg-navy" style="padding-bottom:4rem">
+    <div class="hero-orb hero-orb1" style="opacity:.4"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge"><span class="badge-dot"></span>
+          <span class="en">Events & Milestones</span><span class="nl">Activiteiten & Mijlpalen</span>
+        </div>
+        <h1 class="page-hero-title">
+          <span class="en"><em>Calendar</em></span>
+          <span class="nl"><em>Kalender</em></span>
+        </h1>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+  <section class="section bg-cream">
+    <div class="container cal-layout">
+      <div class="cal-sidebar">
+        <div class="mini-cal">
+          <div class="mini-cal-header">
+            <button class="cal-nav" onclick="changeMonth(-1)">‹</button>
+            <span id="cal-label" class="mini-cal-month"></span>
+            <button class="cal-nav" onclick="changeMonth(1)">›</button>
+          </div>
+          <div class="mini-cal-weekdays">
+            <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+          </div>
+          <div class="mini-cal-days" id="mini-cal-days"></div>
+        </div>
+        <div class="cal-legend">
+          <div class="leg-item"><span class="leg-dot" style="background:var(--gold)"></span><span class="en">Advisory Committee</span><span class="nl">Klankbordgroep</span></div>
+          <div class="leg-item"><span class="leg-dot" style="background:#3D5080"></span><span class="en">Webinar / Training</span><span class="nl">Webinar / Vorming</span></div>
+          <div class="leg-item"><span class="leg-dot" style="background:#0E1B35"></span><span class="en">Conference</span><span class="nl">Conferentie</span></div>
+          <div class="leg-item"><span class="leg-dot" style="background:#2D7A4F"></span><span class="en">Lab Study</span><span class="nl">Labstudie</span></div>
+        </div>
+      </div>
+      <div class="cal-events-list reveal" id="cal-events-list"></div>
+    </div>
+  </section>
+</div><!-- /calendar -->
+
+<!-- ── CONTACT ── -->
+<div class="page" id="page-contact">
+  <section class="page-hero bg-navy" style="padding-bottom:4rem">
+    <div class="hero-orb hero-orb1" style="opacity:.4"></div>
+    <div class="container">
+      <div class="page-hero-content reveal">
+        <div class="badge"><span class="badge-dot"></span>Contact</div>
+        <h1 class="page-hero-title">
+          <span class="en">Get in <em>Touch</em></span>
+          <span class="nl">Neem <em>Contact op</em></span>
+        </h1>
+        <p class="page-hero-lead en">For collaborations, school partnerships, media requests, or general questions about COMPASS+.</p>
+        <p class="page-hero-lead nl">Voor samenwerkingen, schoolpartnerschappen, mediaverzoeken of algemene vragen over COMPASS+.</p>
+      </div>
+    </div>
+    <div class="hero-arc"></div>
+  </section>
+  <section class="section bg-cream">
+    <div class="container two-col">
+      <div class="reveal">
+        <div class="section-tag en">Contact Information</div>
+        <div class="section-tag nl">Contactgegevens</div>
+        <h2 class="section-title en">We'd love to <em>hear from you</em></h2>
+        <h2 class="section-title nl">Neem gerust <em>contact op</em></h2>
+        <p class="prose en">Interested in collaborating, implementing Columbus in your school, inviting a researcher for a talk, or learning more about the project?</p>
+        <p class="prose nl">Geïnteresseerd in samenwerken, Columbus implementeren in uw school, een onderzoeker uitnodigen, of meer weten over het project?</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="c-icon">👤</div>
+            <div>
+              <div class="c-label en">Principal Investigator</div>
+              <div class="c-label nl">Hoofdonderzoeker</div>
+              <div class="c-val">Prof. Vincent Donche</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">🏛️</div>
+            <div>
+              <div class="c-label en">Institution</div>
+              <div class="c-label nl">Instelling</div>
+              <div class="c-val">University of Antwerp — Research Group Edubron</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">🌐</div>
+            <div>
+              <div class="c-label">Columbus</div>
+              <div class="c-val"><a href="https://columbus.onderwijskiezer.be" target="_blank">columbus.onderwijskiezer.be ↗</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">📖</div>
+            <div>
+              <div class="c-label en">Research Group</div>
+              <div class="c-label nl">Onderzoeksgroep</div>
+              <div class="c-val"><a href="https://edubron.be" target="_blank">edubron.be ↗</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">💼</div>
+            <div>
+              <div class="c-label en">Funder</div>
+              <div class="c-label nl">Financierder</div>
+              <div class="c-val">FWO — Research Foundation Flanders · S002426N</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="--delay:.15s">
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="en">First name</label><label class="nl">Voornaam</label>
+              <input type="text" class="form-input" placeholder="Jan" required>
+            </div>
+            <div class="form-group">
+              <label class="en">Last name</label><label class="nl">Achternaam</label>
+              <input type="text" class="form-input" placeholder="Janssen" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="en">Email</label><label class="nl">E-mailadres</label>
+            <input type="email" class="form-input" placeholder="jan@school.be" required>
+          </div>
+          <div class="form-group">
+            <label class="en">I am a...</label><label class="nl">Ik ben een...</label>
+            <select class="form-input">
+              <option class="en">Teacher / School counselor</option>
+              <option class="nl">Leerkracht / Studiekeuzebegeleider</option>
+              <option class="en">School administrator</option>
+              <option class="nl">Schooldirecteur / beleidsmedewerker</option>
+              <option class="en">Researcher / Academic</option>
+              <option class="nl">Onderzoeker / Academicus</option>
+              <option class="en">Policymaker</option>
+              <option class="nl">Beleidsmaker</option>
+              <option class="en">Other</option>
+              <option class="nl">Andere</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="en">Message</label><label class="nl">Bericht</label>
+            <textarea class="form-input" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;justify-content:center">
+            <span class="en">Send message →</span>
+            <span class="nl">Verstuur bericht →</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div><!-- /contact -->
+
+<!-- ══════════════════════════════════════
+  FOOTER
+══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-logo">
+        <div class="footer-logo-mark">C+</div>
+        <span>COMPASS+</span>
+      </div>
+      <p class="footer-desc en">FWO SBO Project S002426N — Empowering the Study Choice Process for Higher Education through Online Self-Assessment Feedback and Effective Career Guidance. Lead institution: University of Antwerp.</p>
+      <p class="footer-desc nl">FWO SBO Project S002426N — Studiekeuzeprocessen voor hoger onderwijs versterken via online zelfevaluatie-feedback en effectieve loopbaanbegeleiding. Promotor: Universiteit Antwerpen.</p>
+    </div>
+    <div>
+      <div class="footer-col-title en">Navigation</div>
+      <div class="footer-col-title nl">Navigatie</div>
+      <ul class="footer-links">
+        <li><a href="#" onclick="showPage('home');return false;">Home</a></li>
+        <li><a href="#" onclick="showPage('about');return false;"><span class="en">About</span><span class="nl">Over ons</span></a></li>
+        <li><a href="#" onclick="showPage('research');return false;"><span class="en">Research</span><span class="nl">Onderzoek</span></a></li>
+        <li><a href="#" onclick="showPage('news');return false;"><span class="en">News</span><span class="nl">Nieuws</span></a></li>
+        <li><a href="#" onclick="showPage('calendar');return false;"><span class="en">Calendar</span><span class="nl">Kalender</span></a></li>
+        <li><a href="#" onclick="showPage('contact');return false;">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Links</div>
+      <ul class="footer-links">
+        <li><a href="https://columbus.onderwijskiezer.be" target="_blank">columbus.onderwijskiezer.be ↗</a></li>
+        <li><a href="https://edubron.be" target="_blank">edubron.be ↗</a></li>
+        <li><a href="https://fwo.be" target="_blank">fwo.be ↗</a></li>
+        <li><a href="https://orcid.org/0000-0002-9405-3896" target="_blank">ORCID — V. Donche ↗</a></li>
+        <li><a href="/admin" class="en">Admin Login ↗</a><a href="/admin" class="nl">Admin Login ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2025 COMPASS+ · FWO SBO S002426N</span>
+    <span>UA · UGent · KU Leuven · AHS</span>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
