@@ -389,7 +389,7 @@ textarea.form-input{resize:vertical;min-height:110px}
 ════════════════════════════════════════ */
 
 .site-logo {
-  height: 60px;
+  height: 75px;
   display: block;
 }
 
@@ -398,7 +398,6 @@ textarea.form-input{resize:vertical;min-height:110px}
   align-items: center;
 }
 
-/* Move navbar logo to the right */
 .navbar .logo {
-  margin-left: 70px;
+  margin-left: 170px;
 }
