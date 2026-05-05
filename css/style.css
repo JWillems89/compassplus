@@ -85,7 +85,11 @@ img{max-width:100%;display:block}
   margin:0 auto;
   padding:0 56px;
 }
-.logo{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.logo{
+  display:flex;
+  align-items:center;
+  transform:translateY(2px);
+}
 .site-logo{
   height:75px;
   display:block;
