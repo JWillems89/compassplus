@@ -412,18 +412,28 @@ textarea.form-input{resize:vertical;min-height:110px}
  LOGO FIX  
 ════════════════════════════════════════ */
 
-.site-logo {
-  height: 75px;
-  display: block;
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   display: flex;
   align-items: center;
+  margin-left: 0;
+  margin-right: auto;
 }
 
-.navbar .logo {
-  margin-left: 250px;
+.site-logo {
+  height: 75px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  margin-left: auto;
+  justify-content: flex-end;
 }
 
 /* ════════════════════════════════════════
