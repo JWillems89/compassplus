@@ -108,17 +108,18 @@ COMPASS.events = [
 
 // ── TEAM ──────────────────────────────────────────────
 COMPASS.team = [
-  {
-    id: "vincent-donche",
-    name: "Prof. Vincent Donche",
-    initials: "VD",
-    role_en: "Principal Investigator",
-    role_nl: "Promotor / Hoofdonderzoeker",
-    institution: "University of Antwerp",
-    department: "Research Group Edubron",
-    research_lines: ["PI", "RL2 Lead", "Coordination"],
-    orcid: "0000-0002-9405-3896",
-    order: 1
+    {
+      id: "vincent-donche",
+      name: "Prof. Vincent Donche",
+      initials: "VD",
+      role_en: "Principal Investigator",
+      role_nl: "Promotor / Hoofdonderzoeker",
+      institution: "University of Antwerp",
+      department: "Research Group Edubron",
+      research_lines: ["PI", "RL2 Lead", "Coordination"],
+      researchers: ["Dr. Jonas Willems", "Dra.Roselyne Willems"],
+      orcid: "0000-0002-9405-3896",
+      order: 1
   },
   {
     id: "Stijn-Schelfhout",
