@@ -39,9 +39,12 @@
 <!-- ══════════════════════════════════════
   NAVBAR
 ══════════════════════════════════════ -->
- <a href="#" class="logo" onclick="showPage('home');return false;">
-  <img src="images/COMPASS-hor-rgb2.png" alt="COMPASS+" class="site-logo">
-  </a>
+<nav class="navbar" id="navbar">
+  <div class="container navbar-inner">
+
+    <a href="#" class="logo" onclick="showPage('home');return false;">
+      <img src="./images/COMPASS-hor-rgb2.png" alt="COMPASS+" class="site-logo">
+    </a>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="#" id="nav-home" class="nav-link active" onclick="showPage('home');return false;">
@@ -61,9 +64,10 @@
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
+
   </div>
 </nav>
-
+  
 <!-- Mobile drawer -->
 <div class="mobile-drawer" id="mobile-drawer">
   <div class="mobile-drawer-inner">
@@ -644,45 +648,53 @@
         </div>
       </div>
       <div class="reveal" style="--delay:.15s">
-        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label class="en">First name</label><label class="nl">Voornaam</label>
-              <input type="text" class="form-input" placeholder="Jan" required>
-            </div>
-            <div class="form-group">
-              <label class="en">Last name</label><label class="nl">Achternaam</label>
-              <input type="text" class="form-input" placeholder="Janssen" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="en">Email</label><label class="nl">E-mailadres</label>
-            <input type="email" class="form-input" placeholder="jan@school.be" required>
-          </div>
-          <div class="form-group">
-            <label class="en">I am a...</label><label class="nl">Ik ben een...</label>
-            <select class="form-input">
-              <option class="en">Teacher / School counselor</option>
-              <option class="nl">Leerkracht / Studiekeuzebegeleider</option>
-              <option class="en">School administrator</option>
-              <option class="nl">Schooldirecteur / beleidsmedewerker</option>
-              <option class="en">Researcher / Academic</option>
-              <option class="nl">Onderzoeker / Academicus</option>
-              <option class="en">Policymaker</option>
-              <option class="nl">Beleidsmaker</option>
-              <option class="en">Other</option>
-              <option class="nl">Andere</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="en">Message</label><label class="nl">Bericht</label>
-            <textarea class="form-input" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;justify-content:center">
-            <span class="en">Send message →</span>
-            <span class="nl">Verstuur bericht →</span>
-          </button>
-        </form>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mzdoyrgl" method="POST">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label class="en">First name</label>
+      <label class="nl">Voornaam</label>
+      <input type="text" name="first_name" class="form-input" placeholder="Jan" required>
+    </div>
+
+    <div class="form-group">
+      <label class="en">Last name</label>
+      <label class="nl">Achternaam</label>
+      <input type="text" name="last_name" class="form-input" placeholder="Janssen" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="en">Email</label>
+    <label class="nl">E-mailadres</label>
+    <input type="email" name="email" class="form-input" placeholder="jan@school.be" required>
+  </div>
+
+  <div class="form-group">
+    <label class="en">I am a...</label>
+    <label class="nl">Ik ben een...</label>
+
+    <select name="role" class="form-input">
+      <option value="Teacher / School counselor">Teacher / School counselor</option>
+      <option value="School administrator">School administrator</option>
+      <option value="Researcher / Academic">Researcher / Academic</option>
+      <option value="Policymaker">Policymaker</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label class="en">Message</label>
+    <label class="nl">Bericht</label>
+    <textarea name="message" class="form-input" rows="5" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;justify-content:center">
+    <span class="en">Send message →</span>
+    <span class="nl">Verstuur bericht →</span>
+  </button>
+
+</form>
       </div>
     </div>
   </section>
@@ -697,7 +709,7 @@
     <div class="footer-logo">
       <img src="./images/COMPASS-hor-rgb2.png" alt="COMPASS+" class="footer-site-logo">
     </div>
-      <p class="footer-desc en">FWO SBO Project S002426N — Empoweringg the Study Choice Process for Higher Education through Online Self-Assessment Feedback and Effective Career Guidance. Lead institution: University of Antwerp.</p>
+      <p class="footer-desc en">FWO SBO Project S002426N — Empowering the Study Choice Process for Higher Education through Online Self-Assessment Feedback and Effective Career Guidance. Lead institution: University of Antwerp.</p>
       <p class="footer-desc nl">FWO SBO Project S002426N — Studiekeuzeprocessen voor hoger onderwijs versterken via online zelfevaluatie-feedback en effectieve loopbaanbegeleiding. Promotor: Universiteit Antwerpen.</p>
     </div>
     <div>
