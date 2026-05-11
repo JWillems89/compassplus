@@ -80,7 +80,7 @@ COMPASS.events = [
     id: "lab-study-2",
     title_en: "RL2 Lab Study 2 — Self-efficact study - start data collection",
     title_nl: "OL2 Labstudie 2 — Zelf-effectiviteit studie - Start dataverzameling",
-    type_en: "Lab Study",
+    type_en: "Study",
     type_nl: "Labstudie",
     date: "2026-03-16",
     location_en: "Antwerp Social Lab",
