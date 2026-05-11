@@ -468,3 +468,28 @@ textarea.form-input{resize:vertical;min-height:110px}
 .ugent-logo {
   max-height: 72px !important;
 }
+
+/* ════════════════════════════════════════
+ ONDERZOEKERS TOEVOEGEN AAN RESEARCH TEAM
+════════════════════════════════════════ */
+
+.team-researchers {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.team-researchers-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--gold);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+
+.team-researcher {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
