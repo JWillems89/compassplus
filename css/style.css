@@ -203,7 +203,26 @@ img{max-width:100%;display:block}
 .rl-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:2rem;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;animation-delay:var(--delay,0s)}
 .rl-card:hover{transform:translateY(-3px);box-shadow:var(--sh-md)}
 .rl-bar{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--c1),var(--c2))}
-.rl-num{font-family:'Fraunces',serif;font-size:4rem;font-weight:900;color:var(--border);line-height:1;position:absolute;top:1rem;right:1.5rem}
+.rl-num{
+  font-family:'Fraunces',serif;
+  font-size:4rem;
+  font-weight:900;
+  color:var(--border);
+  line-height:1;
+  position:absolute;
+  top:1rem;
+  right:1.5rem;
+  z-index:0;
+  opacity:.55;
+  pointer-events:none;
+}
+.rl-tag,
+.rl-title,
+.rl-desc,
+.rl-chips{
+  position:relative;
+  z-index:2;
+}
 .rl-tag{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin:.25rem 0 .4rem}
 .rl-title{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:.7rem;line-height:1.25}
 .rl-desc{font-size:14px;color:var(--text-mid);line-height:1.65;margin-bottom:1.25rem}
