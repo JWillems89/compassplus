@@ -261,23 +261,6 @@ function changeMonth(dir) {
   renderCal();
 }
 
-/* ── Contact form ── */
-function handleSubmit(e) {
-  e.preventDefault();
-  const lang = getLang();
-  const btn = document.getElementById('submit-btn');
-  btn.textContent = lang === 'nl' ? '✓ Verzonden!' : '✓ Sent!';
-  btn.style.background = '#2D7A4F';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = lang === 'nl'
-      ? '<span class="nl">Verstuur bericht →</span>'
-      : '<span class="en">Send message →</span>';
-    btn.style.background = '';
-    btn.disabled = false;
-    e.target.reset();
-  }, 3500);
-}
 
 /* ── Netlify Identity redirect for admin ── */
 if (window.netlifyIdentity) {
