@@ -49,70 +49,61 @@ COMPASS.news = [
 // ── EVENTS ────────────────────────────────────────────
 COMPASS.events = [
   {
-    id: "klankbord-2",
-    title_en: "Klankbordgroep Meeting #2 — Research Line 1 Findings",
-    title_nl: "Klankbordgroepvergadering #2 — Bevindingen Onderzoekslijn 1",
+    id: "klankbord-1",
+    title_en: "Advisory Committee Meeting #1",
+    title_nl: "Klankbordgroepvergadering #1 ",
     type_en: "Advisory Committee",
     type_nl: "Klankbordgroep",
     date: "2026-01-27",
     location_en: "University of Antwerp",
     location_nl: "Universiteit Antwerpen",
     time: "09:30–13:00",
-    description_en: "Second advisory committee meeting presenting preliminary findings from Research Line 1.",
-    description_nl: "Tweede klankbordgroepvergadering met eerste bevindingen uit Onderzoekslijn 1."
+    description_en: "First advisory committee meeting - Project introduction & Aligment.",
+    description_nl: "Eerste klankbordgroepvergadering - Introductie project & Afstemming."
   },
-  {
-    id: "webinar-schools",
-    title_en: "Columbus for Schools: New Feedback Features — Webinar",
-    title_nl: "Columbus voor Scholen: Nieuwe Feedbackmogelijkheden — Webinar",
-    type_en: "Webinar",
-    type_nl: "Webinar",
-    date: "2026-03-15",
-    location_en: "Online",
-    location_nl: "Online",
-    time: "15:00–16:30",
-    description_en: "Free webinar for teachers and school counselors on new Columbus feedback features. Free registration.",
-    description_nl: "Gratis webinar voor leerkrachten en begeleiders over nieuwe Columbus-feedbackmogelijkheden. Gratis inschrijving."
+  
+ {
+    id: "klankbord-2",
+    title_en: "Klankbordgroep Meeting #2 — Mid-project review",
+    title_nl: "Klankbordgroepvergadering #2 — Tussentijdse opvolging",
+    type_en: "Advisory Committee",
+    type_nl: "Klankbordgroep",
+    date: "2026-11-20",
+    location_en: "University of Antwerp",
+    location_nl: "University of Antwerp",
+    time: "tba",
+    description_en: "Mid-project advisory committee meeting reviewing progress across all three research lines & valorisation.",
+    description_nl: "Tussentijdse klankbordgroepvergadering met overzicht van voortgang over de drie onderzoekslijnen en valorisatie."
   },
+  
   {
     id: "lab-study-2",
-    title_en: "RL2 Lab Study 2 — Self-regulation cohort (data collection)",
-    title_nl: "OL2 Labstudie 2 — Zelfregulatie cohort (dataverzameling)",
+    title_en: "RL2 Lab Study 2 — Self-efficact study - start data collection",
+    title_nl: "OL2 Labstudie 2 — Zelf-effectiviteit studie - Start dataverzameling",
     type_en: "Lab Study",
     type_nl: "Labstudie",
-    date: "2026-05-12",
+    date: "2026-03-16",
     location_en: "Antwerp Social Lab",
     location_nl: "Antwerp Social Lab",
     time: "",
-    description_en: "Data collection for the second eye-tracking lab study examining self-regulation as moderator of nudge effectiveness.",
-    description_nl: "Dataverzameling voor de tweede eye-tracking labstudie over zelfregulatie als moderator van nudge-effectiviteit."
+    description_en: "Data collection for the first eye-tracking lab study examining self-efficacy as moderator of nudge effectiveness.",
+    description_nl: "Dataverzameling voor de eerste eye-tracking labstudie over zelfeffectiviteit als moderator van nudge-effectiviteit."
   },
+  
   {
-    id: "earli-2026",
-    title_en: "EARLI 2026 — COMPASS+ Paper Presentation",
-    title_nl: "EARLI 2026 — COMPASS+ Paperpresentatie",
+    id: "EFYE-2026",
+    title_en: "EFYE 2026 — COMPASS+ Paper Presentation",
+    title_nl: "EFYE 2026 — COMPASS+ Paperpresentatie",
     type_en: "Conference",
     type_nl: "Conferentie",
-    date: "2026-08-28",
-    location_en: "Ghent, Belgium",
-    location_nl: "Gent, België",
+    date: "2026-06-10",
+    location_en: "Szeged, Hungary",
+    location_nl: "Szeged, Hungary",
     time: "",
-    description_en: "Presentation of COMPASS+ research findings at the European Association for Research on Learning and Instruction biennial conference.",
-    description_nl: "Presentatie van COMPASS+ onderzoeksbevindingen op de tweejaarlijkse EARLI-conferentie."
+    description_en: "Presentation of COMPASS+ research findings at the European First Year Experience conference.",
+    description_nl: "Presentatie van COMPASS+ onderzoeksbevindingen op de European First Year Experience conferentie."
   },
-  {
-    id: "klankbord-3",
-    title_en: "Klankbordgroep Meeting #3 — Mid-project review",
-    title_nl: "Klankbordgroepvergadering #3 — Tussentijdse evaluatie",
-    type_en: "Advisory Committee",
-    type_nl: "Klankbordgroep",
-    date: "2027-01-20",
-    location_en: "KU Leuven",
-    location_nl: "KU Leuven",
-    time: "09:30–13:00",
-    description_en: "Mid-project advisory committee meeting reviewing progress across all three research lines.",
-    description_nl: "Tussentijdse klankbordgroepvergadering met overzicht van voortgang over de drie onderzoekslijnen."
-  }
+ 
 ];
 
 // ── TEAM ──────────────────────────────────────────────
