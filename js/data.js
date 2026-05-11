@@ -130,6 +130,7 @@ COMPASS.team = [
     institution: "Ghent University",
     department: "Dept. of Experimental Psychology",
     research_lines: ["RL1 Lead", "RL2"],
+    researchers: ["Dra. Moira Decorte"],
     orcid: "",
     order: 2
   },
@@ -142,6 +143,7 @@ COMPASS.team = [
     institution: "KU Leuven",
     department: "School Psychology & Dev. in Context",
     research_lines: ["RL1", "RL3 Lead"],
+    researchers: ["Dr. Alicia Ramos", "Dr. Ilse Van Damme", "Dra. Akemi Gabriela Watanabe Morales"],
     orcid: "",
     order: 3
   },
@@ -154,6 +156,7 @@ COMPASS.team = [
     institution: "Artevelde University of Applied Sciences",
     department: "Education & Career Guidance",
     research_lines: ["Valorization"],
+    researchers: ["Dr. Eva Vandemeulebroucke", "Sara Wouters"],
     orcid: "",
     order: 4
   }
