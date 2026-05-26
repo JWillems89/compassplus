@@ -151,6 +151,16 @@ img{max-width:100%;display:block}
   font-weight:800;
 }
 
+.hero-desc{
+  font-size:1.08rem;
+  color:rgba(255,255,255,.82);
+  line-height:1.75;
+  max-width:560px;
+  margin-bottom:2.25rem;
+  font-weight:400;
+  animation:fadeUp .7s .2s ease both;
+}
+
 /* Hero panel */
 .hero-panel{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:2rem;animation:fadeUp .7s .15s ease both}
 .panel-label{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold-light);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.25rem}
