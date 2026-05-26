@@ -135,7 +135,8 @@ img{max-width:100%;display:block}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
-.hero-title{font-family:'Fraunces',serif;font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:900;line-height:1.07;color:var(--white);margin-bottom:1.4rem;animation:fadeUp .7s .1s ease both}
+.hero-title{
+  font-family:'Figtree',sans-serif; font-size:clamp(2.8rem,5vw,5rem);font-weight:800;line-height:1.02;letter-spacing:-0.04em;color:var(--white);margin-bottom:1.4rem;animation:fadeUp .7s .1s ease both}
 .hero-title em{font-style:italic;color:var(--gold-light)}
 .hero-desc{font-size:1.05rem;color:rgba(255,255,255,.6);line-height:1.8;max-width:480px;margin-bottom:2.25rem;animation:fadeUp .7s .2s ease both}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
