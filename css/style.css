@@ -136,10 +136,20 @@ img{max-width:100%;display:block}
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 
 .hero-title{
-  font-family:'Figtree',sans-serif; font-size:clamp(2.8rem,5vw,5rem);font-weight:800;line-height:1.02;letter-spacing:-0.04em;color:var(--white);margin-bottom:1.4rem;animation:fadeUp .7s .1s ease both}
-.hero-title em{font-style:italic;color:var(--gold-light)}
-.hero-desc{font-size:1.05rem;color:rgba(255,255,255,.6);line-height:1.8;max-width:480px;margin-bottom:2.25rem;animation:fadeUp .7s .2s ease both}
-.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeUp .7s .3s ease both}
+  font-family:'Figtree',sans-serif;
+  font-size:clamp(2.8rem,5vw,5rem);
+  font-weight:800;
+  line-height:1.02;
+  letter-spacing:-0.04em;
+  color:var(--white);
+  margin-bottom:1.4rem;
+  animation:fadeUp .7s .1s ease both;
+}
+.hero-title em{
+  font-style:normal;
+  color:var(--gold-light);
+  font-weight:800;
+}
 
 /* Hero panel */
 .hero-panel{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:2rem;animation:fadeUp .7s .15s ease both}
@@ -178,10 +188,28 @@ img{max-width:100%;display:block}
 .section-tag{display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.65rem}
 .section-tag::before{content:'';width:20px;height:1px;background:var(--gold)}
 .section-tag.light,.section-tag.light::before{color:var(--gold-light);background:var(--gold-light)}
-.section-title{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.5vw,2.75rem);font-weight:700;line-height:1.15;color:var(--navy)}
-.section-title.light{color:var(--white)}
-.section-title em{font-style:italic;color:var(--gold)}
-.section-title.light em{color:var(--gold-light)}
+.section-title{
+  font-family:'Figtree',sans-serif;
+  font-size:clamp(1.8rem,3.5vw,2.75rem);
+  font-weight:800;
+  line-height:1.12;
+  letter-spacing:-0.03em;
+  color:var(--navy);
+}
+
+.section-title.light{
+  color:var(--white);
+}
+
+.section-title em{
+  font-style:normal;
+  color:var(--gold);
+  font-weight:800;
+}
+
+.section-title.light em{
+  color:var(--gold-light);
+}
 .section-lead{margin-top:.9rem;font-size:1.05rem;color:var(--text-mid);line-height:1.75;max-width:600px}
 
 /* ════════════════════════════════════════
