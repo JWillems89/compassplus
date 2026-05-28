@@ -177,8 +177,20 @@ img{max-width:100%;display:block}
 .page-hero{background:var(--navy);position:relative;overflow:hidden;padding:clamp(4rem,8vw,7rem) 0 clamp(3rem,5vw,5rem)}
 .page-hero::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:55px;background:var(--cream);clip-path:ellipse(55% 100% at 50% 100%)}
 .page-hero-content{position:relative;z-index:2}
-.page-hero-title{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:1rem}
-.page-hero-title em{font-style:italic;color:var(--gold-light)}
+.page-hero-title{
+  font-family:'Figtree',sans-serif;
+  font-size:clamp(2.4rem,5vw,4rem);
+  font-weight:800;
+  letter-spacing:-0.04em;
+  color:var(--white);
+  line-height:1.05;
+  margin-bottom:1rem;
+}
+.page-hero-title em{
+  font-style:italic;
+  color:var(--gold-light);
+  font-weight:800;
+}
 .page-hero-lead{font-size:1.1rem;color:rgba(255,255,255,.6);max-width:580px;line-height:1.75}
 
 /* ════════════════════════════════════════
@@ -341,15 +353,81 @@ img{max-width:100%;display:block}
 /* ════════════════════════════════════════
    TEAM
 ════════════════════════════════════════ */
-.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
-.team-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--r-lg);padding:2rem;text-align:center;transition:transform .2s,box-shadow .2s}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+
+.team-card{
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:2rem;
+  position:relative;
+  overflow:hidden;
+  transition:transform .2s,box-shadow .2s;
+}
+.team-card::before{
+  content:'';
+  position:absolute;
+  top:0;left:0;right:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--navy),var(--slate));
+}
 .team-card:hover{transform:translateY(-3px);box-shadow:var(--sh-md)}
-.team-avatar{width:76px;height:76px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,var(--navy) 0%,var(--slate) 100%);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:24px;font-weight:900;color:var(--gold-light);border:3px solid var(--gold)}
-.team-name{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;color:var(--navy)}
-.team-role{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin:.3rem 0 .25rem}
-.team-inst{font-size:13px;color:var(--text-mid);margin-bottom:.75rem}
-.team-badges{display:flex;gap:.4rem;justify-content:center;flex-wrap:wrap}
-.team-badge{background:var(--navy);color:var(--gold-light);font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 8px;border-radius:4px}
+
+.team-card-top{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+
+.team-avatar{
+  width:60px;height:60px;
+  border-radius:50%;
+  flex-shrink:0;
+  background:linear-gradient(135deg,var(--navy) 0%,var(--slate) 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;
+  font-size:20px;font-weight:900;
+  color:var(--gold-light);
+  border:2px solid var(--gold-border);
+}
+
+.team-name{
+  font-family:'Figtree',sans-serif;
+  font-size:1.05rem;
+  font-weight:800;
+  letter-spacing:-0.025em;
+  color:var(--navy);
+  line-height:1.2;
+}
+
+.team-role{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  color:var(--gold);
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin:.2rem 0 0;
+}
+
+.team-inst{
+  font-size:13px;
+  color:var(--text-mid);
+  margin:.5rem 0 .75rem;
+  line-height:1.45;
+}
+
+.team-badges{display:flex;gap:.4rem;flex-wrap:wrap}
+
+.team-badge{
+  background:var(--navy);
+  color:var(--gold-light);
+  font-family:'JetBrains Mono',monospace;
+  font-size:10px;
+  padding:3px 8px;
+  border-radius:4px;
+  letter-spacing:.03em;
+}
 
 /* ════════════════════════════════════════
    ABOUT / VALUES
@@ -448,7 +526,7 @@ textarea.form-input{resize:vertical;min-height:110px}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
 /* ════════════════════════════════════════
- LOGO FIX  
+ LOGO FIX
 ════════════════════════════════════════ */
 
 .navbar-inner {
@@ -476,7 +554,7 @@ textarea.form-input{resize:vertical;min-height:110px}
 }
 
 /* ════════════════════════════════════════
- FOOTER PARTNERS  
+ FOOTER PARTNERS
 ════════════════════════════════════════ */
 
 .footer-partners {
@@ -509,7 +587,7 @@ textarea.form-input{resize:vertical;min-height:110px}
 }
 
 /* ════════════════════════════════════════
- ONDERZOEKERS TOEVOEGEN AAN RESEARCH TEAM
+ RESEARCHERS UNDER TEAM CARD
 ════════════════════════════════════════ */
 
 .team-researchers {
