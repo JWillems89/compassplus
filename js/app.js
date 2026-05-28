@@ -185,30 +185,39 @@ function renderTeam() {
 
   el.innerHTML = sorted.map(m => `
     <div class="team-card">
-      <div class="team-card-top">
-        <div class="team-avatar">${m.initials}</div>
-        <div>
-          <div class="team-name">${m.name}</div>
-          <div class="team-role">${m['role_' + lang]}</div>
-        </div>
+      <div class="team-avatar">${m.initials}</div>
+
+      <div class="team-name">${m.name}</div>
+
+      <div class="team-role">
+        ${m['role_' + lang]}
       </div>
 
       <div class="team-inst">
-        ${m.institution}${m.department ? '<br><small>' + m.department + '</small>' : ''}
+        ${m.institution}
+        ${m.department ? '<br><small>' + m.department + '</small>' : ''}
       </div>
 
       <div class="team-badges">
-        ${m.research_lines.map(rl => `<span class="team-badge">${rl}</span>`).join('')}
+        ${m.research_lines.map(rl => `
+          <span class="team-badge">${rl}</span>
+        `).join('')}
       </div>
 
       ${m.researchers && m.researchers.length ? `
         <div class="team-researchers">
+
           <div class="team-researchers-label">
             ${lang === 'nl' ? 'Onderzoekers' : 'Researchers'}
           </div>
-          ${m.researchers.map(r => `<div class="team-researcher">${r}</div>`).join('')}
+
+          ${m.researchers.map(r => `
+            <div class="team-researcher">${r}</div>
+          `).join('')}
+
         </div>
       ` : ''}
+
     </div>
   `).join('');
 }
