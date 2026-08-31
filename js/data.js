@@ -116,6 +116,19 @@ COMPASS.news = [
     excerpt_nl: "In 2027 verzorgt COMPASS+ verschillende infosessies voor scholen, waaronder een Themadag Leerzorg bij CNO Antwerpen en een online STEM Netelands-sessie, waarin leerkrachten, studiekeuzebegeleiders en directies kennismaken met de inzichten en tools van het project.",
     link: ""
   }
+,
+  {
+    id: "rl3-start-2026",
+    title_en: "Research line 3 starts its data collection in secondary schools",
+    title_nl: "Onderzoekslijn 3 start met dataverzameling in secundaire scholen",
+    category_en: "Project Updates",
+    category_nl: "Projectupdates",
+    date: "2026-09-09",
+    featured: false,
+    excerpt_en: "Ahead of the data collection, teachers were trained in four train-the-trainer sessions in Leuven, Herentals, Bree and Ghent, preparing them for a micro-trial intervention on values and goals clarification. On 9 September, the first school in the sample starts collecting data on the contextual support of the study choice process.",
+    excerpt_nl: "In aanloop naar de dataverzameling werden leerkrachten opgeleid tijdens vier train-the-trainer sessies in Leuven, Herentals, Bree en Gent, ter voorbereiding van een micro-trial interventie rond het verduidelijken van waarden en doelen. Op 9 september start de eerste school uit de steekproef met het verzamelen van data over de contextuele ondersteuning van het studiekeuzeproces.",
+    link: ""
+  }
 ];
 
 // ── EVENTS ────────────────────────────────────────────
@@ -398,6 +411,77 @@ COMPASS.events = [
     time: "15u-16u",
     description_en: "Introductory session for teachers, guidance counselors and schools.",
     description_nl: "Introductiesessie voor leerkrachten, studiekeuzebegeleiders en directie."
+  }
+,
+
+  {
+    id: "rl3-ttt-leuven",
+    title_en: "RL3: Train-the-trainer session for teachers",
+    title_nl: "OL3: Train-the-trainer sessie voor leerkrachten",
+    type_en: "Study",
+    type_nl: "Studie",
+    date: "2026-08-19",
+    location_en: "Leuven",
+    location_nl: "Leuven",
+    time: "13u-18u",
+    description_en: "Training for teachers, in the face of testing a micro-trial intervention on values and goals clarification.",
+    description_nl: "Training voor leerkrachten, met het oog op het testen van een micro-trial interventie rond het verduidelijken van waarden en doelen."
+  },
+
+  {
+    id: "rl3-ttt-herentals",
+    title_en: "RL3: Train-the-trainer session for teachers",
+    title_nl: "OL3: Train-the-trainer sessie voor leerkrachten",
+    type_en: "Study",
+    type_nl: "Studie",
+    date: "2026-08-24",
+    location_en: "Herentals",
+    location_nl: "Herentals",
+    time: "13u-18u",
+    description_en: "Training for teachers, in the face of testing a micro-trial intervention on values and goals clarification.",
+    description_nl: "Training voor leerkrachten, met het oog op het testen van een micro-trial interventie rond het verduidelijken van waarden en doelen."
+  },
+
+  {
+    id: "rl3-ttt-bree",
+    title_en: "RL3: Train-the-trainer session for teachers",
+    title_nl: "OL3: Train-the-trainer sessie voor leerkrachten",
+    type_en: "Study",
+    type_nl: "Studie",
+    date: "2026-08-27",
+    location_en: "Bree",
+    location_nl: "Bree",
+    time: "13u-18u",
+    description_en: "Training for teachers, in the face of testing a micro-trial intervention on values and goals clarification.",
+    description_nl: "Training voor leerkrachten, met het oog op het testen van een micro-trial interventie rond het verduidelijken van waarden en doelen."
+  },
+
+  {
+    id: "rl3-start-datacollection",
+    title_en: "RL3: Start of data collection",
+    title_nl: "OL3: Start dataverzameling",
+    type_en: "Study",
+    type_nl: "Studie",
+    date: "2026-09-09",
+    location_en: "",
+    location_nl: "",
+    time: "",
+    description_en: "The first school in our sample starts collecting data on the contextual support of study choice.",
+    description_nl: "De eerste school in onze steekproef gaat van start met het verzamelen van data over de contextuele ondersteuning van het studiekeuzeproces van leerlingen."
+  },
+
+  {
+    id: "rl3-ttt-gent",
+    title_en: "RL3: Train-the-trainer session for teachers",
+    title_nl: "OL3: Train-the-trainer sessie voor leerkrachten",
+    type_en: "Study",
+    type_nl: "Studie",
+    date: "2026-09-22",
+    location_en: "Ghent",
+    location_nl: "Gent",
+    time: "13u-18u",
+    description_en: "Training for teachers, in the face of testing a micro-trial intervention on values and goals clarification.",
+    description_nl: "Training voor leerkrachten, met het oog op het testen van een micro-trial interventie rond het verduidelijken van waarden en doelen."
   }
 ];
 
